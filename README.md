@@ -15,13 +15,19 @@
 4. 枚举式
 
 # mode2 策略模式 Strategy
-使用策略模式可以代替大量的`ifelse`，
-使用场景一般是具有同类可替代的行为逻辑算法场景
+使用策略模式可以代替大量的`ifelse`，使用场景一般是具有同类可替代的行为逻辑算法场景。
 
 Comparable
 Comparator
 Cat 、Dog
 Sorter排序
+# mode3 工厂模式 Factory 
+任何可以产生对象的方法或类，都可以叫工厂，（单例也是一种工厂）
+简单工厂
+静态工厂
+工厂方法
+抽象工厂
+Spring IOC
 
 
 
