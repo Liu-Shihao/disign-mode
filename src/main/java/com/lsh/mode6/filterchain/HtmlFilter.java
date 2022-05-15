@@ -10,7 +10,7 @@ public class HtmlFilter  implements Filter{
     public void doFilter(Request request, Response response, FilterChain filterChain) {
         request.str += "HtmlFilter-->";
 //            if (1 == 1) return; 此处可以做逻辑是否向下传递，如果直接返回则不在进行后续Filter过滤
-        filterChain.doFilter(request,response,filterChain);
+        filterChain.doFilter(request,response);
         response.str += "HtmlFilter-->";
     }
 }

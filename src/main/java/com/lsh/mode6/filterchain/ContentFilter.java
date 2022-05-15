@@ -10,7 +10,7 @@ public class ContentFilter implements Filter {
     @Override
     public void doFilter(Request request, Response response, FilterChain filterChain) {
         request.str += "ContentFilter-->";
-        filterChain.doFilter(request,response,filterChain);
+        filterChain.doFilter(request,response);
         response.str += "ContentFilter-->";
     }
 }

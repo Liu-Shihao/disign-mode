@@ -8,7 +8,7 @@ import java.util.List;
  * @date ：Created in 2022/5/15 12:59 上午
  * @desc ：
  */
-public class FilterChain implements Filter {
+public class FilterChain {
 
     List<Filter> filters = new ArrayList<Filter>();
     int index ;
@@ -24,11 +24,10 @@ public class FilterChain implements Filter {
 //    }
 
 
-    @Override
-    public void doFilter(Request request, Response response, FilterChain filterChain) {
+    public void doFilter(Request request, Response response) {
         if (index<filters.size()){
             Filter filter = filters.get(index++);
-            filter.doFilter(request,response,filterChain);
+            filter.doFilter(request,response,this);
         }
 
 
