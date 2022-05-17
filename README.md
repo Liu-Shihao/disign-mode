@@ -66,13 +66,19 @@ Spring IOC
 动态代理：
     JDK动态代理：只能面向接口
     CGLIB动态代理：不需要接口，生成被代理对象的子类作为代理，所以无法代理final修饰的类
+    spring AOP代理
 底层都是通过asm完成的；
+asm:动态操作class文件
 
-# mode11 迭代器模式
+# mode11 迭代器模式 iterator
+容器遍历
 
-# mode12 访问者模式
+# mode12 访问者模式 Visitor
+
 
 # mode13 建造者模式/构建器模式 Builder
+构建复杂对象，可以更加灵活
+
 
 # mode14 适配器模式
 
